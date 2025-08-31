@@ -53,6 +53,6 @@ voxify/
 1. Clone the repository:
    
 ```bash
-   git clone https://github.com/YourUsername/voxify.git
+   git clone https://github.com/dvlprpy/voxify.git
    cd voxify
 ```
