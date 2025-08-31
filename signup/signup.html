@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap.min.css">
+    <script src="../bootstrap-5.3.3-dist/bootstrap.bundle.min.js"></script>
+    <title>signup</title>
+</head>
+
+<body class="bg-primary">
+
+    <div class="container-fluid height-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="container bg-light rounded d-flex flex-column justify-content-center align-items-center decrease">
+            <h1 class="text-center mt-4 mb-4">Sign up</h1>
+            <form action="" class="w-75" method="">
+                <!-- firstname -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill-add text-primary"></i></span>
+                    <input type="text" name="" placeholder="firstname..." class="form-control" id="" required>
+                </div>
+
+                <!-- lastname -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2"><i class="bi bi-person-fill-add text-primary"></i></span>
+                    <input type="text" name="" placeholder="lastname..." id="" class="form-control" required>
+                </div>
+
+                <!-- username -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3"><i class="bi bi-person-fill text-primary"></i></span>
+                    <input type="text" name="" class="form-control" placeholder="username..." id="" required>
+                </div>
+
+                <!-- password -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon4"><i class="bi bi-shield-lock-fill text-primary"></i></span>
+                    <input type="password" name="" oninput="passwordMode()" class="form-control change-mode" placeholder="password..." id="pass-md" required>
+                    <span class="input-group-text cursor-pointer" id="basic-addon6" onclick="chgrisl()">
+                        <img src="../svg/password mode/very_weak.svg" title="very weak password" width="20px" id="password-mode" height="20px" alt="">
+                    </span>
+                </div>
+
+                <!-- phone number -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon5"><i class="bi bi-phone-fill text-primary"></i></span>
+                    <input type="text" name="" class="form-control" placeholder="phone number..." id="" required>
+                </div>
+
+                <!-- signup button -->
+                <div class="row d-flex flex-column justify-content-center align-items-center mt-4 mb-4">
+                    <button type="submit" class="btn btn-primary w-50">Sign up</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="./signup.js"></script>
+</body>
+
+</html>

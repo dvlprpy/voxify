@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Found</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: serif;
+            font-size: xx-large;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            background-color: black;
+            border: 2px solid green;
+            color: green;
+            font-family: serif;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: 1s all ease-in-out;
+        }
+
+        a:hover {
+            background-color: green;
+            color: black;
+        }
+
+        p {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="demo">
+
+    </p>
+
+    <a href="#">Home</a>
+    <script>
+        let str = "404 not found page...";
+        let index = 0;
+        function writer() {
+            if (index < str.length) {
+                document.querySelector(".demo").innerHTML += str.charAt(index);
+                index++;
+            }
+            setTimeout(writer, 500);
+        }
+        writer();
+    </script>
+</body>
+
+</html>

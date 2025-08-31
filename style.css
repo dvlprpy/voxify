@@ -1,0 +1,78 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.about {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.mic-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+.mic-style {
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#boldButton {
+    border: none;
+}
+
+.flags-iran{
+    background-image: url('./svg/flags/iran.svg');
+}
+
+.list-style > li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#faq{
+    margin: 0 auto;
+}
+
+
+.english-voice{
+    direction: ltr;
+}
+
+.persian-voice{
+    direction: rtl;
+}
+
+.color-picker-input{
+    border: none !important;
+    outline: none !important;
+}
+
+
+
+
+.customized-message-container {
+    position: fixed; /* این باعث میشه که از بقیه صفحه جدا بشه */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* خاکستری شفاف */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* اولویت بالا نسبت به سایر عناصر */
+    visibility: hidden; /* در ابتدا مخفی باشه */
+}
+
+.customized-message {
+    width: 50%; /* یا هر مقدار دیگه‌ای که می‌خوای */
+    /* background-color: white; */
+    /* padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.customized-message .alert {
+    margin-bottom: 0; /* فضا بین alert و پایین صفحه رو حذف می‌کنیم */
+}
+

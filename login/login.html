@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap.min.css">
+    <script src="../bootstrap-5.3.3-dist/bootstrap.bundle.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body class="bg-primary">
+    <div class="container-fluid container-fluid-login d-flex flex-column justify-content-center align-items-center">
+        <div class="container  rounded d-flex flex-column justify-content-center align-items-center bg-light decrease">
+            <h1 class="text-center mb-5 mt-3 text-primary">Login</h1>
+            <form action="" class="width-90" method="" enctype="">
+                <!-- username -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-person-fill text-primary"></i>
+                    </span>
+                    <input type="text" name="" class="form-control" id="" placeholder="Username..." required>
+                </div>
+
+                <!-- password -->
+                <div class="input-group mb-4">
+                    <span class="input-group-text" id="basic-addon2">
+                        <i class="bi bi-shield-lock-fill text-primary"></i>
+                    </span>
+                    <input type="password" name="" class="form-control show-pass" id="" placeholder="Password..." required>
+                    <span class="input-group-text cursor-pointer" onclick="showHide(this)"><i
+                        class="bi bi-eye-slash-fill text-primary"></i></span>
+                </div>
+
+                <span class="text-primary mb-3 cursor-pointer">Forget Password</span>
+
+                <div class="row d-flex flex-column justify-content-center align-items-center mt-4">
+                    <button type="submit" class="btn btn-primary w-50 mb-2">Login</button>
+                    <button type="submit" class="btn btn-outline-primary w-50 mb-5">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./login.js"></script>
+</body>
+
+</html>
