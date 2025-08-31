@@ -21,6 +21,7 @@ Voxify is a web application that converts **voice recordings into text** in real
 - Bootstrap
 
 ## 📂 Project Structure
+```
 voxify/
 ├── index.html
 ├── Script.js
@@ -46,7 +47,7 @@ voxify/
 │ └── signup.png
 └── svg/
 └── [all SVG files]
-
+```
 
 ## 📦 Installation & Usage
 1. Clone the repository:
